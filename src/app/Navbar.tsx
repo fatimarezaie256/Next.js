@@ -23,16 +23,21 @@ const navlist:{id:number,name:string,url:string}[] = [
     name:"Contact",
     url:"/contact",
   },
+  {
+    id:5,
+    name:"Post",
+    url:"/post",
+  },
 ]
 function Navbar() {
   const pathname = usePathname();
     return (
 
     <div>
-          <nav className="justify-between" style={{backgroundColor:"brown",color:"white",display:"flex",padding:"12px 6px"}}>
+          <nav className="justify-center items-center flex flex-row shadow-md p-6 gap-14 font-bold bg-stone-50/30 ">
          {navlist.map(nav=>{
             const isActive = pathname === nav.url || (pathname.startsWith(nav.url) &&       nav.url !== "/");
-          return(<Link className={isActive?"text-2xl font-bold ":""} key={nav.id} href={nav.url}>{nav.name}</Link>);
+          return(<Link className={isActive?"text-2xl  font-black border-b-2  ":""} key={nav.id} href={nav.url}>{nav.name}</Link>);
 })}
         </nav>
     </div>

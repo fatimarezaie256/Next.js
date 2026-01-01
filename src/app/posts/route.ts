@@ -1,4 +1,5 @@
-import { data } from "./data"; 
+import { data } from "./data";
+
 export async function GET(){
-    return await Response.json(data);
-};
+    return Response.json(data);
+}
