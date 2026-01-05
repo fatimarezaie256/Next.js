@@ -18,7 +18,7 @@ export default function ImageSLider(){
         <div><Image src="/images/login1.jpg" alt="some thing went wrong" height={1000} width={1000} className="rounded-md mt-42"/></div>
         <div><Image src="/images/mount.jpg" alt="some thing went wrong" height={1000} width={1000} className="rounded-md mt-42"/></div>
         <div><Image src="/images/sun.jpg" alt="some thing went wrong" height={1000} width={1000} className="rounded-md mt-42"/></div>
-        <div><img src="/images/1.jpg" alt="" /></div>
+        <div><img src="/images/5.jpg" alt="" className="mt-20" /></div>
      
     </Slider>
     </div>
