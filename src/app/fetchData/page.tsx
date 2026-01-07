@@ -32,11 +32,21 @@ if(loading){
 return(
     <div className=''>
         {list.map((user,index)=>(
-            <div key={index} className='border rounded-md p-10'>
-                <h1 className='text-center font-bold'>{user.name}</h1>
-                <h1>{user.email}</h1>
-                <h1>{user.phone}</h1>
-                <h1>{user.website}</h1>
+            <div key={index} className='shadow-md rounded-md p-10'>
+                <table className='border'>
+                    <tr>
+                        <th className='px-4 py-2 border bg-black text-white text-center'>Id</th>
+                        <th className='px-4 py-2 border bg-black text-white text-center'>Name</th>
+                        <th className='px-4 py-2 border bg-black text-white text-center'>Email</th>
+                        <th className='px-4 py-2 border bg-black text-white text-center'>Website</th>
+                    </tr>
+                    <tr>
+                        <td className='px-4 py-2 border'>{user.name}</td>
+                        <td className='px-4 py-2 border'>{user.email}</td>
+                        <td className='px-4 py-2 border'>{user.phone}</td>
+                        <td className='px-4 py-2 border'>{user.website}</td>
+                    </tr>
+                </table>
             </div>
         ))}
     </div>
