@@ -1,21 +1,17 @@
 "use client";
-import React from 'react'
-import { useEffect } from 'react'
+import React from "react";
+import { useEffect } from "react";
 function page() {
-    useEffect(() => {
-  const handleResize = () => {
-    console.log(window.innerWidth);
-  };
+  useEffect(() => {
+    const handleResize = () => {
+      <h1>(window.innerWidth);</h1>;
+    };
 
-  window.addEventListener("resize", handleResize);
+    window.addEventListener("resize", handleResize);
 
-  return () => window.removeEventListener("resize", handleResize);
-}, []);
-  return (
-    <div>
-
-    </div>
-  )
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  return <div></div>;
 }
 
-export default page
+export default page;
