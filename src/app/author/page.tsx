@@ -14,8 +14,10 @@ export default async function book() {
         <table className="border py-4 px-6 mx-auto rounded-md">
           <thead>
             <tr>
-              <th className="border px-4 py-2 bg-black text-white">Name</th>
-              <th className="border px-4 py-2 bg-black text-white">
+              <th className="border px-4 py-2 font-bold bg-black text-white">
+                Name
+              </th>
+              <th className="border px-4 py-2 font-bold bg-black text-white">
                 Biography
               </th>
               <th className="border px-4 py-2 bg-black text-white">
@@ -26,9 +28,13 @@ export default async function book() {
           <tbody>
             {author.map((auth, index) => (
               <tr key={index}>
-                <td className="border px-4 py-2">{auth.name}</td>
-                <td className="border px-4 py-2">{auth.bio}</td>
-                <td className="border px-4 py-2">{auth.nationality}</td>
+                <td className="border font-bold text-center px-4 py-2">
+                  {auth.name}
+                </td>
+                <td className="border font-bold px-4 py-2">{auth.bio}</td>
+                <td className="border font-bold text-center px-4 py-2">
+                  {auth.nationality}
+                </td>
               </tr>
             ))}
           </tbody>

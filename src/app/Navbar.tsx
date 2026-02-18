@@ -32,8 +32,8 @@ const navlist: { id: number; name: string; url: string }[] = [
 function Navbar() {
   const pathname = usePathname();
   return (
-    <div>
-      <nav className=" flex flex-row shadow-md p-6 gap-14 font-bold bg-stone-50/30 ">
+    <div className="">
+      <nav className=" flex flex-row shadow-md  p-6 gap-14 font-bold bg-stone-50/30 ">
         {navlist.map((nav) => {
           const isActive =
             pathname === nav.url ||
